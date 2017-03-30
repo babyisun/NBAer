@@ -1,0 +1,4 @@
+<view class="tc">
+<text>NBAer {{loading}}</text>
+</view>
+
