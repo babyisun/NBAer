@@ -1,1 +1,10 @@
 /* page/component/index.wxss */
+
+.tc .head {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+text {
+  color: red;
+}

@@ -1,4 +1,5 @@
 <view class="tc">
 <text>NBAer {{loading}}</text>
+<image class="head" width="10rpx" src="http://a.espncdn.com/i/headshots/nba/players/full/2797.png"></image>
 </view>
 
