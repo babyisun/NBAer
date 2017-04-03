@@ -1,5 +1,11 @@
 // page/component/index.js
+var app = getApp();
 Page({
+  data: {
+    userInfo: null,
+    loading: true,
+    scoreboard: null
+  },
   makeRequest: function () {
     var self = this
     self.setData({
@@ -8,23 +14,17 @@ Page({
     wx.request({
       //url: "http://china.nba.com/static/data/scores/daily.json",
       //  url:"https://op.juhe.cn/onebox/basketball/nba?key=cfe2b06fe9e79d1cda8f1b16586723a5",
-      url: "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20170328",
+      url: "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=&lang=en",
       data: {
-        noncestr: Date.now()
+        //noncestr: Date.now()
       },
       success: function (result) {
-        wx.showToast({
-          title: '请求成功',
-          icon: 'success',
-          mask: true,
-          duration: 1000
-        })
         self.setData({
-          loading: false
+          loading: false,
+          scoreboard: result.data
         })
         console.log('request success', result)
       },
-
       fail: function ({errMsg}) {
         console.log('request fail', errMsg)
         self.setData({
@@ -33,8 +33,15 @@ Page({
       }
     })
   },
-  data: { loading: true },
   onLoad: function (options) {
+    var that = this
+    //调用应用实例的方法获取全局数据
+    app.getUserInfo(function (userInfo) {
+      //更新数据
+      that.setData({
+        userInfo: userInfo
+      })
+    })
     // 页面初始化 options为页面跳转所带来的参数
     this.makeRequest();
   },

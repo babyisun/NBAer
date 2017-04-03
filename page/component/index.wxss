@@ -1,10 +1,20 @@
 /* page/component/index.wxss */
 
-.tc .head {
-  width: 200rpx;
-  height: 200rpx;
+.head {
+  /*height: 50rpx;*/
+  background: gray;
+  color: white;
 }
 
-text {
-  color: red;
+.scoreboard {
+  display: flex;
+  flex-direction: row;
+}
+
+.scoreboard .logo {
+  flex:1;
+}
+.scoreboard .logo image{
+  width:100rpx;
+  height: 100rpx;
 }
