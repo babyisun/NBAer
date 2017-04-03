@@ -1,7 +1,5 @@
 /* page/component/index.wxss */
-
 .head {
-  /*height: 50rpx;*/
   background: gray;
   color: white;
 }
