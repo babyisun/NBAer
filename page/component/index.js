@@ -4,7 +4,15 @@ Page({
   data: {
     userInfo: null,
     loading: true,
-    scoreboard: null
+    scoreboard: {
+      date: new Date(),
+      events: [
+        {
+          status: "",
+          competitors: [{ name: "NY", logo: "", scores: 94, homeAway: "home", linescores: [], leaders: [] }]
+        }
+      ]
+    }
   },
   makeRequest: function () {
     var self = this
