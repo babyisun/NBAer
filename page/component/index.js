@@ -1,4 +1,5 @@
 // page/component/index.js
+const util = require('../../util/util.js');
 var app = getApp();
 Page({
   data: {
@@ -52,6 +53,7 @@ Page({
     })
     // 页面初始化 options为页面跳转所带来的参数
     this.makeRequest();
+    console.log(util.formatTime(+new Date()));
   },
   onReady: function () {
     // 页面渲染完成
