@@ -32,10 +32,10 @@ Page({
           loading: false,
           scoreboard: result.data
         })
-        console.log('request success', result)
+        //console.log('request success', result)
       },
       fail: function ({errMsg}) {
-        console.log('request fail', errMsg)
+        //console.log('request fail', errMsg)
         self.setData({
           loading: false
         })
