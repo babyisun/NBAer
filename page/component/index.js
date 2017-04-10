@@ -22,7 +22,7 @@ Page({
     })
     wx.request({
       //url: "http://china.nba.com/static/data/scores/daily.json",
-      //  url:"https://op.juhe.cn/onebox/basketball/nba?key=cfe2b06fe9e79d1cda8f1b16586723a5",
+      //url: "https://op.juhe.cn/onebox/basketball/nba?key=cfe2b06fe9e79d1cda8f1b16586723a5",
       url: "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=&lang=en",
       data: {
         //noncestr: Date.now()
