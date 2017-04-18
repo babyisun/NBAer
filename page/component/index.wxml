@@ -3,16 +3,16 @@
     <view class="tc head">
       <text>{{scoreboard.day.date}}</text>
     </view>
-    <view class="scoreboard">
+    <view class="scoreboard" wx:for="{{scoreboard.events}}">
       <view class="logo">
-        <image src="{{scoreboard.events[0].competitions[0].competitors[0].team.logo}}"></image>
-        <text>{{scoreboard.events[0].competitions[0].competitors[0].team.displayName}}</text>
-        <text>{{scoreboard.events[0].competitions[0].competitors[0].score}}</text>
+        <image src="{{item.competitions[0].competitors[0].team.logo}}"></image>
+        <text>{{item.competitions[0].competitors[0].team.displayName}}</text>
+        <text>{{item.competitions[0].competitors[0].score}}</text>
       </view>
       <view class="logo">
-        <image src="{{scoreboard.events[0].competitions[0].competitors[1].team.logo}}"></image>
-        <text>{{scoreboard.events[0].competitions[0].competitors[1].team.displayName}}</text>
-        <text>{{scoreboard.events[0].competitions[0].competitors[1].score}}</text>
+        <image src="{{item.competitions[0].competitors[1].team.logo}}"></image>
+        <text>{{item.competitions[0].competitors[1].team.displayName}}</text>
+        <text>{{item.competitions[0].competitors[1].score}}</text>
       </view>
     </view>
     <view class="test">
