@@ -15,10 +15,6 @@
         <text>{{item.competitions[0].competitors[1].score}}</text>
       </view>
     </view>
-    <view class="test">
-    <table><tr><th>111</th></tr></table>
-    <table class="mod-data" ><thead><tr><th class="name">Starters</th><th class="min">MIN</th><th class="fg">FG</th><th class="3pt">3PT</th><th class="ft">FT</th><th class="oreb">OREB</th><th class="dreb">DREB</th><th class="reb">REB</th><th class="ast">AST</th><th class="stl">STL</th><th class="blk">BLK</th><th class="to">TO</th><th class="pf">PF</th><th class="plusminus">+/-</th><th class="pts">PTS</th></tr></thead></table>
-    </view>
   </view>
 </view>
 
