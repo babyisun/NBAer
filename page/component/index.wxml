@@ -15,6 +15,9 @@
         <text>{{item.competitions[0].competitors[1].score}}</text>
       </view>
     </view>
+    <view class="leaders">
+    领袖球员
+    </view>
   </view>
 </view>
 
