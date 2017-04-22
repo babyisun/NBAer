@@ -14,6 +14,13 @@
         <text>{{item.competitions[0].competitors[1].team.displayName}}</text>
         <text>{{item.competitions[0].competitors[1].score}}</text>
       </view>
+      <view class="score">
+      <text>主\客</text>
+      <text>1</text>
+      <text>2</text>
+      <text>3</text>
+      <text>4</text>
+      </view>
     </view>
     <view class="leaders">
     领袖球员

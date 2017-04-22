@@ -8,6 +8,8 @@
 .scoreboard {
   display: flex;
   flex-direction:row;
+  margin: 10px;
+  border: 1px solid #ccc;
 }
 
 .scoreboard .logo {
@@ -18,4 +20,9 @@
   width:100rpx;
   height: 100rpx;
   /*width: 100%;*/
+}
+
+.score{
+  align-items: center;
+  justify-content: center;
 }
